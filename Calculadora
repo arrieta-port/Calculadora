@@ -1,0 +1,67 @@
+print("************************************* \n")
+print("Calculadora con una sola variable \n ")
+print("************************************* \n")
+
+print("Menu de opciones \n")
+print("1. suma")
+print("2. Resta")
+print("3. Division")
+print("4. Multiplicacion")
+print("5. Division entera")
+print("6. Exponente")
+print("7. Modulo")
+
+numero = int(input("Introduce la opcion deseada: "))
+
+if numero == 1:
+
+    print("Elegiste opcion suma \n")
+    numero = int(input("Introduce el primer numero: "))
+    numero += int(input("Introduce el segundo numero: "))
+    print("El resultado de la suma es:",numero)
+
+elif numero == 2:
+
+    print("Elegiste opcion resta \n")
+    numero = int(input("Introduce el primer numero: "))
+    numero -= int(input("Introduce el segundo numero: "))
+    print("El resultado de la resta es:",numero)
+
+elif numero == 3:
+
+    print("Elegiste opcion division \n")
+    numero = float(input("Introduce el primer numero: "))
+    numero /= float(input("Introduce el segundo numero: "))
+    print("El resultado de la division es:",round(numero, ))
+    
+
+elif numero == 4:
+
+    print("Elegiste opcion multiplicacion \n")
+    numero = int(input("Introduce el primer numero: "))
+    numero *= int(input("Introduce el segundo numero: "))
+    print("El resultado de la multiplicacion es:",numero)
+
+elif numero == 5:
+
+    print("Elegiste opcion Dision entera \n")
+    numero = int(input("Introduce el primer numero: "))
+    numero //= int(input("Introduce el segundo numero: "))
+    print("El resultado de la division entera es:",numero)
+
+elif numero == 6:
+
+    print("Elegiste opcion exponente \n")
+    numero = int(input("Introduce el primer numero: "))
+    numero **= int(input("Introduce el segundo numero: "))
+    print("El resultado del exponente es:",numero)
+
+elif numero == 7:
+
+    print("Elegiste opcion modulo \n")
+    numero = int(input("Introduce el primer numero: "))
+    numero %= int(input("Introduce el segundo numero: "))
+    print("El resultado del modulo o resto es:",numero)
+
+else:
+    print("La opcion elegida no existe, vuelve a intentar")
